@@ -4,6 +4,12 @@
 var util = function(){
 
 
+
+    /** 获得当前屏幕宽高 **/
+    var  getOffset = function(){
+            return { width : document.body.offsetWidth, height : document.body.offsetHeight }
+     };
+
     var getBF = function(){
         var ua = navigator.userAgent.toLowerCase();
         var scene = (ua.indexOf('micromessenger')) > -1 ? 'weixin' : ((/qq\/([\d\.]+)*/).test(ua) ? 'qq': 'web');
@@ -164,6 +170,7 @@ var util = function(){
     var noop = function(){};
 
     return{
+        'getOffset' : getOffset,
         'noop' : noop,
         'transitionEnd' : transitionEnd,
         'RAF' : requestAnimationFrame,

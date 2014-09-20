@@ -3,6 +3,8 @@ var MobileEvent = {
 		this.form();
 	},
 	form : function(){
+
+
 		  var wrapper_scroll = new Scroller('#main', {
                 Scontainer : '.screen-all',
                 hScroll : true,
@@ -21,7 +23,8 @@ var MobileEvent = {
                     console.log(index);
                 }
             });
-	}
+	},
+
 };
 
 

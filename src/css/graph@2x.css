@@ -3,9 +3,9 @@
 .trinagle {
 	width: 0;
 	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid transparent;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid transparent;
 
 
 }
@@ -13,7 +13,7 @@
 
 .trinagle-pour {
 	border-bottom: 0 none;
-	border-top: 50px solid transparent;
+	border-top: 60px solid transparent;
 }
 
 .trinagle-opc{
@@ -60,22 +60,22 @@
 
 /* 超大三角 */
 .trinagle-sg {
-     border-left-width: 65px;
-     border-right-width: 65px;
-     border-bottom-width: 130px;
+     border-left-width: 70px;
+     border-right-width: 70px;
+     border-bottom-width: 135px;
  }
 .trinagle-pour.trinagle-sg{
-    border-top-width: 130px;
+    border-top-width: 135px;
     border-bottom: 0 none;
 }
 /* 更大三角 */
 .trinagle-ssg {
-    border-left-width: 71.5px;
-    border-right-width: 71.5px;
-    border-bottom-width: 143px;
+    border-left-width: 90px;
+    border-right-width: 90px;
+    border-bottom-width: 155px;
 }
 .trinagle-pour.trinagle-ssg{
-    border-top-width: 143px;
+    border-top-width: 155px;
     border-bottom: 0 none;
 }
 
@@ -92,8 +92,8 @@
 .trinagle.color-04 { border-bottom-color: #009691;}
 .trinagle.trinagle-pour.color-04{border-top-color: #009691;}
 
-.trinagle.color-05 { border-bottom-color: #ea5950;}
-.trinagle.trinagle-pour.color-05{border-top-color: #ea5950;}
+.trinagle.color-09 { border-bottom-color: #ea5950;}
+.trinagle.trinagle-pour.color-09{border-top-color: #ea5950;}
 
 .trinagle.color-05 { border-bottom-color: #d4be18;}
 .trinagle.trinagle-pour.color-05{border-top-color: #d4be18;}
