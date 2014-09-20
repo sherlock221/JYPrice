@@ -277,3 +277,58 @@
     border-right: 32px solid transparent;
     border-top-width: 61px;
 }
+
+
+/** 六边形 **/
+.nav-trinagle-main{
+    position: absolute;
+    right: -60px;
+
+
+    -webkit-transform :rotate(30deg);
+    transform :rotate(30deg);
+
+    /** 不支持3d 采用2d 旋转 **/
+    -webkit-transform :rotateZ(30deg);
+    transform :rotateZ(30deg);
+
+
+    -webkit-transition : transform  500ms ease;
+    transition : transform  500ms ease;
+
+    /* 宽高 */
+    width: 120px;
+    height: 206px;
+
+    top: 50%;
+    margin-top: -103px;
+}
+.nav-trinagle{
+    width: 0px;
+    height:0px;
+    border-style:solid;
+    border-color:#000 transparent transparent transparent;
+    position:absolute;
+    border-width:103.92px  60px;
+}
+
+.nav-trinagle.rotate-1{
+    -webkit-transform : rotate(-60deg);
+    border-color:#d4be18 transparent transparent transparent;
+}
+.nav-trinagle.rotate-2{
+    -webkit-transform : rotate(-120deg);
+    border-color:#2185f3 transparent transparent transparent;
+}
+.nav-trinagle.rotate-3{
+    -webkit-transform : rotate(-180deg);
+    border-color:#b5164e transparent transparent transparent;
+}
+.nav-trinagle.rotate-4{
+    -webkit-transform : rotate(-240deg);
+    border-color:#009691 transparent transparent transparent;
+}
+.nav-trinagle.rotate-5{
+    -webkit-transform : rotate(-300deg);
+    border-color:#ffff00 transparent transparent transparent;
+}
