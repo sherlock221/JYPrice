@@ -38,6 +38,27 @@ var util = function(){
         return false;
     };
 
+    /**
+     * transition 动画结束
+     * @returns {*}
+     */
+    var animationEnd = function(dom,callBack) {
+        var el = document.createElement('div');
+        var transEndEventNames = {
+            'WebkitAnimation' : 'webkitAnimationEnd',
+            'MozAnimation'    : 'animationend',
+            'OAnimation'      : 'oAnimationEnd',
+            'animation'       : 'animationend'
+        };
+
+        for (var name in transEndEventNames) {
+            if (el.style[name] !== undefined) {
+                dom.addEventListener(transEndEventNames[name], callBack);
+                break;
+            }
+        }
+    };
+
 
 
 
@@ -173,6 +194,7 @@ var util = function(){
         'getOffset' : getOffset,
         'noop' : noop,
         'transitionEnd' : transitionEnd,
+        'animationEnd' : animationEnd,
         'RAF' : requestAnimationFrame,
         'cRAF' : cancelAnimationFrame,
         'extend' : extend,
