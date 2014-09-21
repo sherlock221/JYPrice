@@ -9,9 +9,11 @@ var MobileUI = {
 var MobileEvent = {
 	init : function(){
 		this.form();
+
+        //保证android下流畅 启动动画
+       MobileUI.screen01.removeClass("hide");
 	},
 	form : function(){
-
 
 		  var wrapper_scroll = new Scroller('#main', {
                 Scontainer : '.screen-all',
