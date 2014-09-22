@@ -150,3 +150,13 @@
     -webkit-animation :bounceInRight 0.5s ease  2s 1 both;
 }
 /** 第三阶段动画 **/
+
+
+/** 第四阶段动画 **/
+.bg-response{
+    -webkit-animation :fadeIn 1s ease  0.3s 1 both;
+}
+
+
+
+/** 第四阶段动画 **/

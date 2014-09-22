@@ -1,7 +1,7 @@
 var MobileUI = {
 
     bottomTrinagle : $(".bottom-trinagle"),
-    screen01       : $("#screen01"),
+    screen01       : $("#screen00"),
     screenAll      : $("#screen-all"),
     topTrinagle    : $(".top-trinagle"),
     bgMain         : $("#bg-main")
@@ -16,6 +16,13 @@ var MobileEvent = {
 	},
 	form : function(){
 
+          //设置当前三角高度
+          var height  = document.body.offsetHeight;
+          var width   = document.body.offsetWidth;
+
+          $(".paper-trin").css({ "borderWidth": height/2+"px 0 "+height/2+"px "+width+"px"});
+
+          //滚动条
 		  var wrapper_scroll = new Scroller('#main', {
                 Scontainer : '.screen-all',
                 hScroll : true,
@@ -43,9 +50,6 @@ var MobileEvent = {
                 }
             });
 
-
-
-
             //第一阶段结束动画
             util.animationEnd(document.querySelector(".center-title"),function(){
                 //第一阶段隐藏
@@ -67,14 +71,17 @@ var MobileEvent = {
             }
 
             var topTrinagle =  MobileUI.topTrinagle[0].querySelector(".trinagle-pour");
+
             //第二阶段结束
             util.animationEnd(topTrinagle,function(){
-                console.log("top trin");
-                //动画重置
+//                console.log("top trin");
+//                //动画重置
                 MobileUI.bgMain.siblings().addClass("hide");
                 MobileUI.bgMain.removeClass("hide");
             });
-	}
+
+
+    }
 
 
 };
