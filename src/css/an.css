@@ -92,6 +92,47 @@
     }
 }
 
+
+@-webkit-keyframes arrowRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+}
+@keyframes arrowRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    40% {
+        opacity: 1;
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+}
+
+.arrowRight{
+    -webkit-animation: arrowRight 0.8s ease-in 2.5s infinite;
+    animation: arrowRight 0.8s ease-in 2.5s infinite;
+}
+
 /** 第二阶段动画 **/
 
 

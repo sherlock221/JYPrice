@@ -2,6 +2,7 @@ var MobileUI = {
 
     bottomTrinagle : $(".bottom-trinagle"),
     screen01       : $("#screen01"),
+    screenAll      : $("#screen-all"),
     topTrinagle    : $(".top-trinagle"),
     bgMain         : $("#bg-main")
 };
@@ -31,6 +32,14 @@ var MobileEvent = {
                 },
                 scrollEnd: function(index){
                     console.log(index);
+
+                    var $screen = MobileUI.screenAll.find(".screen");
+                    var node = $screen.filter("[id='screen0"+index+"']");
+                    for (var i = 0; i < $screen.length; i++) {
+                        var $sc = $($screen[i]);
+                        $sc.children(".content").addClass("hide");
+                    };
+                    node.children(".content").removeClass("hide");
                 }
             });
 

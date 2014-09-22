@@ -332,3 +332,14 @@
     -webkit-transform : rotate(-300deg);
     border-color:#ffff00 transparent transparent transparent;
 }
+
+.left-arrow{
+    background-position: -126px -306px;
+    width: 49.5px;
+    height: 19px;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top:  -10px;
+}
