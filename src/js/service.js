@@ -50,11 +50,18 @@ var MobileEvent = {
                 }
             });
 
+
+        util.animationEnd(document.querySelector("#bg-response"),function(){
+                    $("#bg-response").addClass("hide");
+        });
+
             //第一阶段结束动画
             util.animationEnd(document.querySelector(".center-title"),function(){
                 //第一阶段隐藏
                 hideFirstFrame();
             });
+
+
 
             function hideFirstFrame(){
                 var  f1 = MobileUI.screen01.find("#left-decor");
