@@ -293,7 +293,7 @@
     transform :rotateZ(30deg) scale(10);
 
 
-    -webkit-transition : transform  1s ease;
+    -webkit-transition : -webkit-transform  1s ease;
     transition : transform  1s ease;
 
     /* 宽高 */
@@ -314,11 +314,11 @@
 
 .nav-trinagle.rotate-1{
     -webkit-transform : rotate(-60deg);
-    border-color:#e79d4c transparent transparent transparent;
+    border-color:#ea5950 transparent transparent transparent;
 }
 .nav-trinagle.rotate-2{
     -webkit-transform : rotate(-120deg);
-    border-color:#ea5950 transparent transparent transparent;
+    border-color:#e79d4c transparent transparent transparent;
 }
 .nav-trinagle.rotate-3{
     -webkit-transform : rotate(-180deg);
@@ -326,11 +326,11 @@
 }
 .nav-trinagle.rotate-4{
     -webkit-transform : rotate(-240deg);
-    border-color:#e79d4c transparent transparent transparent;
+    border-color:#ea5950 transparent transparent transparent;
 }
 .nav-trinagle.rotate-5{
     -webkit-transform : rotate(-300deg);
-    border-color:#ea5950 transparent transparent transparent;
+    border-color:#e79d4c transparent transparent transparent;
 }
 
 .left-arrow{

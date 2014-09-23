@@ -6,13 +6,13 @@ var MobileUI = {
     topTrinagle    : $(".top-trinagle"),
     bgMain         : $("#bg-main"),
     scaleDom       : $("#scaleDom"),
-    tranMain       : $("#nav-trinagle-main")
+    tranMain       : $("#nav-trinagle-main"),
+    leftContent    : $("#left-content")
 };
 
 var MobileEvent = {
 	init : function(){
 		this.form();
-
         //保证android下流畅 启动动画
        MobileUI.screen01.removeClass("hide");
 	},
@@ -52,7 +52,7 @@ var MobileEvent = {
                 onTouchEnd: function(name, obj){
                 },
                 scrollEnd: function(index){
-                    console.log(index);
+//                    console.log(index);
 
                     var $screen = MobileUI.screenAll.find(".screen");
                     var node = $screen.filter("[id='screen0"+index+"']");
@@ -84,8 +84,8 @@ var MobileEvent = {
             var topTrinagle =  MobileUI.topTrinagle[0].querySelector(".trinagle-pour");
             //第二阶段结束
             util.animationEnd(topTrinagle,function(){
-//                console.log("top trin");
-//                //动画重置
+//              console.log("top trin");
+//              //动画重置
                 MobileUI.bgMain.siblings().addClass("hide");
                 MobileUI.bgMain.removeClass("hide");
             });
@@ -104,7 +104,6 @@ var MobileEvent = {
                 });
             });
 
-
             //计数器
             var count = 0;
             //旋转角度
@@ -113,8 +112,20 @@ var MobileEvent = {
                 if(count > transArray.length){
                     count = 0;
                 }
+
+                var targetDom  = MobileUI.leftContent.find(".left-content-ul").filter("[num='"+count+"']");
+                targetDom.siblings(".left-content-ul").addClass("hide");
+                targetDom.removeClass("hide");
+
+                if(count % 2 == 0){
+
+                }
                 MobileUI.tranMain.css({"-webkit-transform":"rotateZ("+transArray[count]+"deg) scale(1.5)"});
             });
+
+
+
+
 
 
     }
