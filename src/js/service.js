@@ -95,13 +95,17 @@ var MobileEvent = {
             });
             //第四阶段动画
             util.animationEnd(document.querySelector("#fourAniEnd"),function(){
-                $("#screen01").css("background","#ffffff");
-//
-                $("#scaleDom").hide();
-                $("#nav-trinagle-main").show();
+                $("#screen01").css("background","#ffffff");//
+                $("#scaleDom").addClass("hide");
+
+
+                $("#nav-trinagle-main").removeClass("hide");
+
                 $("#nav-trinagle-main").css({
                     "-webkit-transform" : "rotateZ(30deg) scale(1.5)"
                 });
+
+
             });
 
             //计数器
@@ -120,7 +124,7 @@ var MobileEvent = {
                 if(count % 2 == 0){
 
                 }
-                MobileUI.tranMain.css({"-webkit-transform":"rotateZ("+transArray[count]+"deg) scale(1.5)"});
+                MobileUI.tranMain.css({"-webkit-transform":"rotateZ("+transArray[count]+"deg) scale(1.5) translateZ(0)"});
             });
 
 

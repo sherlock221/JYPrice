@@ -285,16 +285,16 @@
     right: -60px;
 
 
-    -webkit-transform :rotate(30deg) scale(10);
-    transform :rotate(30deg) scale(10);
+    -webkit-transition : -webkit-transform  1s ease;
+    transition : transform  1s ease;
+
 
     /** 不支持3d 采用2d 旋转 **/
     -webkit-transform :rotateZ(30deg) scale(10);
     transform :rotateZ(30deg) scale(10);
 
 
-    -webkit-transition : -webkit-transform  1s ease;
-    transition : transform  1s ease;
+
 
     /* 宽高 */
     width: 120px;
@@ -403,7 +403,7 @@
     -webkit-transform-style: preserve-3d;
 
     transition : transform 1s ease;
-    -webkit-transition : transform 1s ease;
+    -webkit-transition : -webkit-transform 1s ease;
 
 }
 
@@ -413,8 +413,8 @@
     position: absolute;
     left: 22px;
     top: 50%;
-    margin-top: -220px;
-    height: 440px;
+    margin-top: -200px;
+    height: 400px;
 }
 
 /** 文字 **/
@@ -429,7 +429,7 @@
     overflow: hidden;
 }
 .left-content-ul li {
-    margin: 20px 0;
+    margin: 7% 0;
     text-align: center;
 }
 
@@ -465,3 +465,34 @@
     color: #ea5950;
 }
 
+
+.font-01{
+    background-position: 0 -444px;
+    width: 87.5px;
+    height: 54px;
+    -webkit-transform: rotateZ(208deg) scale(0.76) translateZ(0);
+    left: -43px;
+    top: 42px;
+    position: absolute;
+}
+
+.font-02{
+    background-position: 0 -498px;
+    width: 87.5px;
+    height: 54px;
+
+    -webkit-transform: rotateZ(-90deg) scale(0.76) translateZ(0);
+    left: -44px;
+    top: 42px;
+    position: absolute;
+}
+
+.font-03{
+    background-position: 0 -390px;
+    width: 87.5px;
+    height: 54px;
+    -webkit-transform: rotateZ(-210deg) scale(0.76) translateZ(0);
+    right: -42px;
+    bottom: 41px;
+    position: absolute;
+}
