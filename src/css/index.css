@@ -285,16 +285,16 @@
     right: -60px;
 
 
-    -webkit-transform :rotate(30deg);
-    transform :rotate(30deg);
+    -webkit-transform :rotate(30deg) scale(10);
+    transform :rotate(30deg) scale(10);
 
     /** 不支持3d 采用2d 旋转 **/
-    -webkit-transform :rotateZ(30deg);
-    transform :rotateZ(30deg);
+    -webkit-transform :rotateZ(30deg) scale(10);
+    transform :rotateZ(30deg) scale(10);
 
 
-    -webkit-transition : transform  500ms ease;
-    transition : transform  500ms ease;
+    -webkit-transition : transform  1s ease;
+    transition : transform  1s ease;
 
     /* 宽高 */
     width: 120px;
@@ -357,7 +357,7 @@
 
 }
 .paper-trin.paper-02  {
-    border-color: transparent transparent transparent transparent;
+    border-color: transparent transparent transparent #ea5950;
 
 }
 .paper-trin.paper-03  {
@@ -377,6 +377,15 @@
 }
 
 
+.ver-flip{
+    -webkit-transform: scale(1,-1);
+    transform: scale(1,-1);
+}
+
+.hoz-flip{
+    -webkit-transform: scale(-1,1);
+    transform: scale(-1,1);
+}
 
 
 .bg-response{
@@ -385,3 +394,74 @@
     position: absolute;
     z-index: 18;
 }
+
+
+#scaleDom{
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 500;
+    -webkit-transform-style: preserve-3d;
+
+    transition : transform 1s ease;
+    -webkit-transition : transform 1s ease;
+
+}
+
+
+
+.left-content{
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    margin-top: -220px;
+    height: 440px;
+}
+
+/** 文字 **/
+.left-content-title{
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 20px;
+    color: #3e3a39;
+    text-align: center;
+}
+.left-content-ul{
+    overflow: hidden;
+}
+.left-content-ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.left-content-ul li a{
+    display: block;
+    color: #3e3a39;
+    font-size: 12px;
+}
+
+.left-content-ul  .left-content-badge{
+    color: #3e3a39;
+}
+
+.left-content-ul .left-content-tran{
+    display: block;
+    text-align: center;
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    font-size: 12px;
+    margin: -1px 0;
+}
+
+.style-yellow .left-content-badge,  .style-yellow .left-content-tran{
+    color: #e79d4c;
+}
+
+.style-blue  .left-content-badge,  .style-blue .left-content-tran{
+    color: #2faeb8;
+}
+
+.style-red  .left-content-badge,  .style-red .left-content-tran{
+    color: #ea5950;
+}
+
