@@ -1,8 +1,8 @@
 var Images = {
     "chunmaoxuan" : {
         imgs : [
-            "../../img/chumaoxuan-01.png",
-            "../../img/chumaoxuan-02.jpg"
+            "img/chumaoxuan-01.png",
+            "img/chumaoxuan-02.jpg"
         ]
     },
     "baixianfu" : {
@@ -45,6 +45,8 @@ var MobileUI = {
     screenAll      : $("#screen-all")
 };
 
+
+
 var MobileEvent = {
 	init : function(){
 		this.form();
@@ -57,8 +59,20 @@ var MobileEvent = {
          //初始化页面
           var tp = request("tp");
           var object =Images[tp];
-          //
 
+        var temp = "";
+        for(var i=0; i<object.imgs.length;i++){
+             var im = object.imgs[i];
+             var image = '<image src="'+im+'" class="response-img" />';
+              temp += '<li class="screen" >'+
+                 '<div class="content">'
+                 +image
+                 +'</div>'
+                 +'</li>';
+         }
+
+
+        MobileUI.screenAll.html(temp);
 
           //滚动条
 		  var wrapper_scroll = new Scroller('#main', {
@@ -78,7 +92,14 @@ var MobileEvent = {
 
                 }
             });
+
+
+
     }
+
+
+
+
 
 };
 

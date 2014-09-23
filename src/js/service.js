@@ -125,7 +125,10 @@ var MobileEvent = {
 
 
 
-
+        $("#left-content").on("tap","li>a",function(){
+            var href = $(this).attr("href");
+            window.location.href = href;
+        });
 
 
     }
