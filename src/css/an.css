@@ -1,56 +1,61 @@
-
 /** 第一阶段动画 **/
-.left-decor{
-    -webkit-animation :slideInLeft 0.5s ease 0.3s 1 both;
-}
-.right-decor{
-    -webkit-animation :slideInRight 0.5s ease 0.3s 1 both;
+.left-decor {
+    -webkit-animation: slideInLeft 0.5s ease 0.3s 1 both;
 }
 
-#trinagle-list-01{
-    -webkit-animation :slideInUp 0.5s ease 1.5s 1 both;
-}
-#trinagle-list-02{
-    -webkit-animation :slideInUp 0.5s ease 0.8s 1 both;
-}
-#trinagle-list-03{
-    -webkit-animation :slideInRight 0.5s ease 1s 1 both;
-}
-.center-title{
-    -webkit-animation :fadeInDown 0.8s ease 1.5s 1 both;
+.right-decor {
+    -webkit-animation: slideInRight 0.5s ease 0.3s 1 both;
 }
 
-
-.f2  .left-decor{
-    -webkit-animation :slideOutLeft 0.5s ease  0s 1 both;
-}
-.f2 .right-decor{
-    -webkit-animation :slideOutRight 0.5s ease 0s 1 both;
-}
-.f2 .center-title{
-    -webkit-animation :fadeOut 0.8s ease  0s 1 both;
+#trinagle-list-01 {
+    -webkit-animation: slideInUp 0.5s ease 1.5s 1 both;
 }
 
-#trinagleRed{
-    -webkit-animation-name : hinge-my;
-    -webkit-animation-duration : 2.3s;
-    -webkit-animation-delay : 2.8s;
+#trinagle-list-02 {
+    -webkit-animation: slideInUp 0.5s ease 0.8s 1 both;
+}
+
+#trinagle-list-03 {
+    -webkit-animation: slideInRight 0.5s ease 1s 1 both;
+}
+
+.center-title {
+    -webkit-animation: fadeInDown 0.8s ease 1.5s 1 both;
+}
+
+.f2 .left-decor {
+    -webkit-animation: slideOutLeft 0.5s ease 0s 1 both;
+}
+
+.f2 .right-decor {
+    -webkit-animation: slideOutRight 0.5s ease 0s 1 both;
+}
+
+.f2 .center-title {
+    -webkit-animation: fadeOut 0.8s ease 0s 1 both;
+}
+
+#trinagleRed {
+    -webkit-animation-name: hinge-my;
+    -webkit-animation-duration: 2.3s;
+    -webkit-animation-delay: 2.8s;
     -webkit-animation-fill-mode: both;
     z-index: 999;
 }
 
-.scaleBug{
+.scaleBug {
 
 }
 
- .fadeAni{
-    -webkit-animation :zoomIn 0.2s ease  0s 1 both;
+.fadeAni {
+    -webkit-animation: zoomIn 0.2s ease 0s 1 both;
 }
-.f2  #trinagle-list-05{
+
+.f2 #trinagle-list-05 {
 
 }
+
 /** 第一阶段动画 **/
-
 
 /** 第二阶段动画 **/
 
@@ -62,7 +67,7 @@
         -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
     }
-    10%{
+    10% {
         opacity: 1;
     }
 
@@ -100,7 +105,7 @@
         -webkit-animation-timing-function: ease-in-out;
         animation-timing-function: ease-in-out;
     }
-    10%{
+    10% {
         opacity: 1;
     }
 
@@ -130,8 +135,6 @@
     }
 }
 
-
-
 @-webkit-keyframes arrowRight {
     0% {
         opacity: 0;
@@ -149,6 +152,7 @@
         transform: translateX(-4px);
     }
 }
+
 @keyframes arrowRight {
     0% {
         opacity: 0;
@@ -167,52 +171,77 @@
     }
 }
 
-.arrowRight{
+.arrowRight {
     -webkit-animation: arrowRight 1.2s ease-in 2.5s infinite;
     animation: arrowRight 1.2s ease-in 2.5s infinite;
 }
 
 /** 第二阶段动画 **/
 
+/** 第三阶段动画 **/
+.title-list .title-01 {
+    -webkit-animation: bounceInLeft 0.5s ease 0.5s 1 both;
+    animation: bounceInLeft 0.5s ease 0.5s 1 both;
+}
+
+.title-list .title-02 {
+    -webkit-animation: bounceInRight 0.5s ease 1s 1 both;
+    animation: bounceInRight 0.5s ease 1s 1 both;
+}
+
+.title-list .title-03 {
+    -webkit-animation: bounceInLeft 0.5s ease 1.5s 1 both;
+    animation: bounceInLeft 0.5s ease 1.5s 1 both;
+}
+
+.title-list .title-04 {
+    -webkit-animation: bounceInRight 0.5s ease 2s 1 both;
+    animation: bounceInRight 0.5s ease 2s 1 both;
+}
 
 /** 第三阶段动画 **/
-.title-list .title-01{
-    -webkit-animation :bounceInLeft 0.5s ease  0.5s 1 both;
-    animation :bounceInLeft 0.5s ease  0.5s 1 both;
-}
-.title-list .title-02{
-    -webkit-animation :bounceInRight 0.5s ease  1s 1 both;
-    animation :bounceInRight 0.5s ease  1s 1 both;
-}
-.title-list .title-03{
-    -webkit-animation :bounceInLeft 0.5s ease  1.5s 1 both;
-    animation :bounceInLeft 0.5s ease  1.5s 1 both;
-}
-.title-list .title-04{
-    -webkit-animation :bounceInRight 0.5s ease  2s 1 both;
-    animation :bounceInRight 0.5s ease  2s 1 both;
-}
-/** 第三阶段动画 **/
-
 
 /** 第四阶段动画 **/
-.bg-response{
-    -webkit-animation :fadeInAndOut 2s linear  0.3s 1 both;
-    animation :fadeInAndOut 2s linear  0.3s 1 both;
+.bg-response {
+    -webkit-animation: fadeInAndOut 2s linear 0.3s 1 both;
+    animation: fadeInAndOut 2s linear 0.3s 1 both;
 }
 
-.paper-trin.paper-01{
-    -webkit-animation :skew-left-zhe  0.6s ease  2.2s 1 both;
+.paper-trin.paper-01 {
+    -webkit-animation: skew-left-zhe 0.6s ease 2.2s 1 both;
 }
 
-.paper-trin.paper-03{
-    -webkit-animation :skew-right-zhe  0.6s ease   3s 1 both;
+.paper-trin.paper-03 {
+    -webkit-animation: skew-right-zhe 0.6s ease 3s 1 both;
 
 }
 
+#left-content {
+    -webkit-animation: slideInDown 0.6s ease 1.3s 1 both;
+}
 
+#nav-trinagle-main {
+    -webkit-animation: bounceInRight 1.3s ease 0s 1 both;
+}
 
+.scaleDom {
+    -webkit-animation: scaleDom 1.3s linear 0s 1 both;
+}
 
+@-webkit-keyframes scaleDom {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    20% {
+
+    }
+
+    100% {
+        -webkit-transform: translateX(100%) scale(0.2);
+
+    }
+}
 
 @-webkit-keyframes skew-left-zhe {
     0% {
@@ -227,16 +256,17 @@
         transform: skewX(60deg);
     }
 }
+
 @-webkit-keyframes fadeInAndOut {
     0% {
 
         opacity: 0;
     }
-    20%{
+    20% {
         opacity: 1;
     }
 
-    80%{
+    80% {
         opacity: 1;
     }
 
@@ -245,6 +275,7 @@
         opacity: 0;
     }
 }
+
 @-webkit-keyframes skew-right-zhe {
     0% {
 

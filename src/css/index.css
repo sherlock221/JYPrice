@@ -290,8 +290,8 @@
 
 
     /** 不支持3d 采用2d 旋转 **/
-    -webkit-transform :rotateZ(30deg) scale(10);
-    transform :rotateZ(30deg) scale(10);
+    -webkit-transform :rotateZ(30deg) scale(1);
+    transform :rotateZ(30deg) scale(1);
 
 
 
@@ -403,8 +403,9 @@
     -webkit-perspective: 500;
     -webkit-transform-style: preserve-3d;
 
-    transition : transform 1s ease;
-    -webkit-transition : -webkit-transform 1s ease;
+
+
+
 
 }
 
