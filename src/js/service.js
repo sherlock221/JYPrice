@@ -111,7 +111,7 @@ var MobileEvent = {
             //计数器
             var count = 0;
             //旋转角度
-            MobileUI.tranMain.tap(function(){
+            MobileUI.tranMain.tap(function(event){
                 count++;
                 if(count > transArray.length){
                     count = 0;
@@ -121,18 +121,35 @@ var MobileEvent = {
                 targetDom.siblings(".left-content-ul").addClass("hide");
                 targetDom.removeClass("hide");
 
-                if(count % 2 == 0){
-
-                }
                 MobileUI.tranMain.css({"-webkit-transform":"rotateZ("+transArray[count]+"deg) scale(1.5) translateZ(0)"});
             });
 
 
 
+            function showLeftContent(num){
+                MobileUI.leftContent.find(".left-content-ul").filter("[num="+num+"]").removeClass("hide")
+                    .siblings().addClass("hide");
+
+            }
+
+
+
+
+
+        MobileUI.tranMain.find("i").tap(function(){
+            var num = $(this).attr("num");
+            console.log(num);
+            showLeftContent(num);
+        });
+
+
+        //跳转子页面链接
         $("#left-content").on("tap","li>a",function(){
             var href = $(this).attr("href");
             window.location.href = href;
         });
+
+
 
 
     }

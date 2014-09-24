@@ -315,6 +315,7 @@
 .nav-trinagle.rotate-1{
     -webkit-transform : rotate(-60deg);
     border-color:#ea5950 transparent transparent transparent;
+
 }
 .nav-trinagle.rotate-2{
     -webkit-transform : rotate(-120deg);
@@ -474,6 +475,8 @@
     left: -43px;
     top: 42px;
     position: absolute;
+
+    z-index: 11;
 }
 
 .font-02{
@@ -485,6 +488,8 @@
     left: -44px;
     top: 42px;
     position: absolute;
+
+    z-index: 11;
 }
 
 .font-03{
@@ -495,4 +500,7 @@
     right: -42px;
     bottom: 41px;
     position: absolute;
+
+    z-index: 11;
 }
+

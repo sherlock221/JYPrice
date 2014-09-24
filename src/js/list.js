@@ -2,7 +2,11 @@ var Images = {
     "chunmaoxuan" : {
         imgs : [
             "img/chumaoxuan-01.png",
-            "img/chumaoxuan-02.jpg"
+            "img/chumaoxuan-02.jpg",
+            "img/chumaoxuan-03.jpg",
+            "img/chumaoxuan-04.jpg",
+            "img/chumaoxuan-05.jpg",
+            "img/chumaoxuan-06.jpg"
         ]
     },
     "baixianfu" : {
