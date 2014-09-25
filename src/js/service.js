@@ -10,6 +10,15 @@ var MobileUI = {
     leftContent: $("#left-content")
 };
 
+var imgList = ["./img/all.png","./img/bg.png"];
+var ld = new loader(imgList);
+ld.loadend(function(i){
+
+}).complete(function(){
+        MobileEvent.init();
+    });
+
+
 var MobileEvent = {
     init: function () {
         this.form();
@@ -105,21 +114,21 @@ var MobileEvent = {
             $(fourAniEnd).addClass("hide");
 
             setTimeout(function(){
+
                 MobileUI.scaleDom.addClass("hide");
                 $ma.removeClass("hide");
                 MobileUI.leftContent.removeClass("hide");
-            },900);
+            },1000);
 
         });
 
 
-
-        //计数器
+        //计数器`
         var count = 0;
 
         function showLeftContent(num) {
             MobileUI.leftContent.find(".left-content-ul").filter("[num='" + num + "']").removeClass("hide")
-                .siblings().addClass("hide");
+                .siblings().filter(".left-content-ul").addClass("hide");
 
         }
 
@@ -134,7 +143,7 @@ var MobileEvent = {
             var num = $(this).attr("num");
             console.log(num);
             showLeftContent(num);
-            MobileUI.tranMain.css({"-webkit-transform": "rotateZ(" + transArray[count] + "deg) scale(1.5) translateZ(0)"});
+            MobileUI.tranMain.css({"-webkit-transform": "translate3d(0,0,0) rotateZ(" + transArray[count] + "deg)    scale(1.3)"});
             return  false;
         });
 
@@ -153,5 +162,5 @@ var MobileEvent = {
 
 
 $(function () {
-    MobileEvent.init();
+
 });
