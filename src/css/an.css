@@ -221,11 +221,11 @@
 }
 
 #nav-trinagle-main {
-    -webkit-animation: bounceInRight 1.3s ease 0s 1 both;
+    -webkit-animation: bounceInRight-my 1.3s ease 0s 1 ;
 }
 
 .scaleDom {
-    -webkit-animation: scaleDom 1.3s linear 0s 1 both;
+    -webkit-animation: scaleDom 1.3s linear 0s 1 ;
 }
 
 @-webkit-keyframes scaleDom {
@@ -292,3 +292,34 @@
 }
 
 /** 第四阶段动画 **/
+
+
+@-webkit-keyframes bounceInRight-my {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0)rotateZ(30deg) scale(1.5);
+        transform: translate3d(3000px, 0, 0)rotateZ(30deg) scale(1.5);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0)rotateZ(30deg) scale(1.5);
+        transform: translate3d(-25px, 0, 0)rotateZ(30deg) scale(1.5);
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0)rotateZ(30deg) scale(1.5);
+        transform: translate3d(10px, 0, 0)rotateZ(30deg) scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0px, 0, 0) rotateZ(30deg) scale(1.5);
+        transform:  translate3d(0px, 0, 0) rotateZ(30deg) scale(1.5);
+    }
+
+}
