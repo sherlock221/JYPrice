@@ -225,7 +225,7 @@
 }
 
 .scaleDom {
-    -webkit-animation: scaleDom 1.3s linear 0s 1 ;
+    -webkit-animation: scaleDom 1.3s linear 0s 1 backwards ;
 }
 
 @-webkit-keyframes scaleDom {
