@@ -129,12 +129,10 @@ var MobileEvent = {
         function showLeftContent(num) {
             MobileUI.leftContent.find(".left-content-ul").filter("[num='" + num + "']").removeClass("hide")
                 .siblings().filter(".left-content-ul").addClass("hide");
-
         }
 
 
         MobileUI.tranMain.find("i").tap(function () {
-
             count++;
             if (count > transArray.length-1) {
                 count = 0;
