@@ -1,12 +1,12 @@
 var Images = {
     "chunmaoxuan" : {
         imgs : [
-            "img/chumaoxuan-01.png",
-            "img/chumaoxuan-02.jpg",
-            "img/chumaoxuan-03.jpg",
-            "img/chumaoxuan-04.jpg",
-            "img/chumaoxuan-05.jpg",
-            "img/chumaoxuan-06.jpg"
+            "img/chunmaoxuan/chumaoxuan-01.png",
+            "img/chunmaoxuan/chumaoxuan-02.jpg",
+            "img/chunmaoxuan/chumaoxuan-03.jpg",
+            "img/chunmaoxuan/chumaoxuan-04.jpg",
+            "img/chunmaoxuan/chumaoxuan-05.jpg",
+            "img/chunmaoxuan/chumaoxuan-06.jpg"
         ]
     },
     "baixianfu" : {
@@ -46,7 +46,10 @@ function request(paras){
 
 
 var MobileUI = {
-    screenAll      : $("#screen-all")
+    screenAll      : $("#screen-all"),
+    menu           : $("#menu"),
+    menu_layer     : $("#left-content"),
+    close          : $("#close")
 };
 
 
@@ -96,6 +99,15 @@ var MobileEvent = {
 
                 }
             });
+
+        //绑定menu
+        MobileUI.menu.tap(function(){
+            MobileUI.menu_layer.show();
+        });
+
+        MobileUI.close.tap(function(){
+            MobileUI.menu_layer.hide();
+        });
 
 
 
