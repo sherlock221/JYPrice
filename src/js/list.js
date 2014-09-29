@@ -110,6 +110,23 @@ var MobileEvent = {
         });
 
 
+        MobileUI.menu_layer.on("tap",".trans-main",function(){
+
+
+            var $parent =  $(this).closest(".trans-content");
+            var $other  = $parent.siblings();
+            var $ul = $parent.find("ul");
+            $other.find("ul").addClass("hide");
+
+            if($ul.hasClass("hide")){
+                $ul.removeClass("hide");
+            }
+            else{
+                $ul.addClass("hide");
+            }
+
+
+        });
 
     }
 
