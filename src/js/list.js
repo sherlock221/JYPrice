@@ -207,7 +207,9 @@ var MobileEvent = {
                 bounce : false,
                 snap: true,
                 scrollBefore: function(name, e){
+
                     MobileUI.$arrow.addClass("hide");
+
                 },
                 onScroll: function(name, obj){
                 },

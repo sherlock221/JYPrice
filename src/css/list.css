@@ -42,7 +42,7 @@
 
 #menu{
     position: fixed;
-    bottom: -4px;
+    bottom: 0px;
     left: 7px;
     z-index: 19;
     width: 40px;

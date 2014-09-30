@@ -15,6 +15,8 @@ var ld = new loadermsk(imgList, "#0e79ef",function(){
     MobileEvent.init();
 });
 
+var  scroll = true;
+
 
 var MobileEvent = {
     init: function () {
@@ -54,6 +56,8 @@ var MobileEvent = {
 
             },
             onScroll: function (name, obj) {
+
+
             },
             onTouchEnd: function (name, obj) {
             },
@@ -70,6 +74,9 @@ var MobileEvent = {
                 node.children(".content").removeClass("hide");
             }
         });
+
+
+
         //第一阶段结束动画
         util.animationEnd(document.querySelector(".center-title"), function () {
             //第一阶段隐藏
@@ -96,6 +103,8 @@ var MobileEvent = {
 //              //动画重置
             MobileUI.bgMain.siblings().addClass("hide");
             MobileUI.bgMain.removeClass("hide");
+
+
         });
         //第三阶段动画
         util.animationEnd(document.querySelector("#bg-response"), function () {
