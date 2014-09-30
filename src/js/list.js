@@ -161,10 +161,12 @@ var MobileUI = {
     screenAll      : $("#screen-all"),
     menu           : $("#menu"),
     menu_layer     : $("#left-content"),
-    close          : $("#close")
+    close          : $("#close"),
+    $arrow         : $("#arrow")
 };
 
 
+var length;
 
 var MobileEvent = {
 	init : function(){
@@ -181,6 +183,8 @@ var MobileEvent = {
 
           //添加end
         object.imgs.push(Images.end);
+
+        length = object.imgs.length;
 
         var temp = "";
         for(var i=0; i<object.imgs.length;i++){
@@ -205,13 +209,21 @@ var MobileEvent = {
                 bounce : false,
                 snap: true,
                 scrollBefore: function(name, e){
+                    MobileUI.$arrow.addClass("hide");
                 },
                 onScroll: function(name, obj){
                 },
                 onTouchEnd: function(name, obj){
                 },
                 scrollEnd: function(index){
-
+                    if(index == length-1){
+                        MobileUI.$arrow.addClass("hide");
+                    }
+                    else{
+                        if(MobileUI.$arrow.hasClass("hide")){
+                            MobileUI.$arrow.removeClass("hide");
+                        }
+                    }
                 }
             });
 

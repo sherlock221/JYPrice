@@ -506,3 +506,6 @@
     z-index: 11;
 }
 
+.mp_loading{
+    background-color: #ea5950 !important;
+}

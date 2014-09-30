@@ -11,12 +11,9 @@ var MobileUI = {
 };
 
 var imgList = ["./img/all.png","./img/bg.png"];
-var ld = new loader(imgList);
-ld.loadend(function(i){
-
-}).complete(function(){
-        MobileEvent.init();
-    });
+var ld = new loadermsk(imgList, "#0e79ef",function(){
+    MobileEvent.init();
+});
 
 
 var MobileEvent = {
