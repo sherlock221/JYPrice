@@ -56,6 +56,28 @@ var Images = {
 
         ]
     },
+    tbdyunji : {
+        imgs : [
+            "img/tbdyunji/tbdyunji-01.jpg",
+            "img/tbdyunji/tbdyunji-02.jpg",
+            "img/tbdyunji/tbdyunji-03.jpg"
+
+        ]
+    },
+
+    qingyuntianxia :{
+        imgs : [
+            "img/qingyuntianxia/qingyuntianxia-01.jpg",
+            "img/qingyuntianxia/qingyuntianxia-02.jpg",
+            "img/qingyuntianxia/qingyuntianxia-03.jpg",
+            "img/qingyuntianxia/qingyuntianxia-04.jpg",
+            "img/qingyuntianxia/qingyuntianxia-05.jpg",
+            "img/qingyuntianxia/qingyuntianxia-06.jpg",
+            "img/qingyuntianxia/qingyuntianxia-07.jpg",
+            "img/qingyuntianxia/qingyuntianxia-08.jpg"
+
+        ]
+    },
 
 
     "tianzhougucheng" : {
@@ -101,7 +123,9 @@ var Images = {
             "img/yulongwan/yulongwan-11.jpg",
             "img/yulongwan/yulongwan-12.jpg"
         ]
-    }
+    },
+    end : "img/end/end.jpg"
+
 
 };
 
@@ -154,6 +178,9 @@ var MobileEvent = {
          //初始化页面
           var tp = request("tp");
           var object =Images[tp];
+
+          //添加end
+        object.imgs.push(Images.end);
 
         var temp = "";
         for(var i=0; i<object.imgs.length;i++){
