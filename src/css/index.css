@@ -283,7 +283,6 @@
 .nav-trinagle-main{
     position: absolute;
     right: -60px;
-
     -webkit-transition : -webkit-transform  1s ease;
     transition : transform  1s ease;
 
