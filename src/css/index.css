@@ -295,7 +295,6 @@
 
 
 
-
     /* 宽高 */
     width: 120px;
     height: 206px;
@@ -401,6 +400,10 @@
     z-index: 18;
 }
 
+.response-img{
+    width: 100%;
+    height: 100%;
+}
 
 #scaleDom{
     width: 100%;
@@ -409,7 +412,6 @@
     -webkit-transform-style: preserve-3d;
 
 }
-
 
 
 .left-content{

@@ -37,10 +37,8 @@ var Images = {
             "img/jinmaoyue/jinmaoyue-03.jpg",
             "img/jinmaoyue/jinmaoyue-04.jpg",
             "img/jinmaoyue/jinmaoyue-05.jpg",
-            "img/jinmaoyue/jinmaoyue-06.jpg",
-            "img/jinmaoyue/jinmaoyue-07.jpg",
-            "img/jinmaoyue/jinmaoyue-08.jpg",
-            "img/jinmaoyue/jinmaoyue-09.jpg"
+            "img/jinmaoyue/jinmaoyue-06.jpg"
+
 
         ]
     },
@@ -51,8 +49,8 @@ var Images = {
             "img/qianzhangshu/qianzhangshu-02.jpg",
             "img/qianzhangshu/qianzhangshu-03.jpg",
             "img/qianzhangshu/qianzhangshu-04.jpg",
-            "img/qianzhangshu/qianzhangshu-05.jpg",
-            "img/qianzhangshu/qianzhangshu-06.jpg"
+            "img/qianzhangshu/qianzhangshu-05.jpg"
+
 
         ]
     },
