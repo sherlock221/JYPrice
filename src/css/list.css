@@ -195,7 +195,7 @@
 
 
 .arrow{
-    background-image: url("../../img/arrow.png");
+    background: url("../../img/arrow.png");
     background-size: 43.5px 15px;
     width: 43.5px;
     height: 15px;
