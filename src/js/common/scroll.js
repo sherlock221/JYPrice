@@ -14,7 +14,8 @@ var _default_opts = {
     bounce : false,
     lockDirection : true,
     snap : true,
-    nesting : false
+    nesting : false,
+    lock    :  false
 };
 
 Scroller.prototype = {
@@ -64,6 +65,11 @@ Scroller.prototype = {
     },
 
     _touchstart : function(evt){
+
+        if(this.opts.lock == true){
+            return;
+        }
+
         if(this.drag) return;
         this.drag = true;
         target = evt.targetTouches[0];

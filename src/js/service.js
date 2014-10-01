@@ -52,6 +52,7 @@ var MobileEvent = {
             momentum: true,
             bounce: false,
             snap: true,
+            lock : true,
             scrollBefore: function (name, e) {
 
             },
@@ -62,7 +63,7 @@ var MobileEvent = {
             onTouchEnd: function (name, obj) {
             },
             scrollEnd: function (index) {
-//                    console.log(index);
+
 
                 var $screen = MobileUI.screenAll.find(".screen");
                 var node = $screen.filter("[id='screen0" + index + "']");
@@ -104,12 +105,18 @@ var MobileEvent = {
             MobileUI.bgMain.siblings().addClass("hide");
             MobileUI.bgMain.removeClass("hide");
 
-
         });
         //第三阶段动画
         util.animationEnd(document.querySelector("#bg-response"), function () {
             $("#bg-response").addClass("hide");
         });
+
+        util.animationEnd(MobileUI.bgMain.find(".title-04")[0],function(){
+            //解锁滑动
+            wrapper_scroll.opts.lock = false;
+        });
+
+
         //第四阶段动画
         var fourAniEnd  =   document.querySelector("#fourAniEnd");
         util.animationEnd(fourAniEnd,function () {
